@@ -1,0 +1,53 @@
+/*ESTILOS GLOBALES*/
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Montserrat:wght@300&display=swap");
+
+:root {
+  --primary-color: rgb(0, 15, 56);
+  --secondary-color: rgb(0, 109, 173);
+  --tertiary-color: #0000;
+  --quaternary-color: #0000;
+  --fontz-xs: 12px;
+  --fontz-sm: 14px;
+  --fontz-md: 16px;
+  --fontz-lg: 18px;
+  --fontz-xl: 20px;
+  --fontz-xxl: 22px;
+  font-family: "Catamaran", "Montserrat", sans-serif, Georgia, "Times New Roman",
+    Times, serif!;
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  width: 10px;
+}
+section:not(.contact-section){
+  background-color:transparent;
+  border-radius:20px;
+  color:white;
+  overflow:auto;
+  margin: 0 20px 0 20px;
+  box-shadow: 2px 2px 10px 2px black;
+}
