@@ -90,7 +90,7 @@
   .card.first{
     width:320px;
     height:160px;
-    background-image: url("http://192.168.100.3:3000/assets/img/proyect-3.jpg");
+    background-image: url("https://marcosmoraga.netlify.app/assets/img/proyect-3.jpg");
     background-size: cover;
     background-position: center;
     z-index:2;

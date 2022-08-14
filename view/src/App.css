@@ -22,7 +22,7 @@
     position: absolute;
 }
 .main-column-top--logo{
-    background-image:url(http://192.168.100.3:3000/assets/img/logo.png);
+    background-image:url(https://marcosmoraga.netlify.app/assets/img/logo.png);
     height:100%;
     width:150px;
     background-size:contain;
