@@ -17,7 +17,7 @@ const Navbar = () => {
             }
         })
         current.classList.add('active');
-    }, [navBtns])
+    }, [navRef])
 
 
     const activeBtn = (event) => {
