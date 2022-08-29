@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
+
 const About = () => {
+
   return (
     <section className='about-section'>
       <div className='about-section-top'>
@@ -9,7 +11,7 @@ const About = () => {
       <div className='about-section-middle'>
         <p>
           <span>
-            My name is <h1> Marcos Moraga </h1>
+            My name is Marcos Moraga
             im developer, passionate about development and innovation, active and motivated by the new challenges he may encounter
             in the professional field.
           </span>
@@ -29,14 +31,14 @@ const About = () => {
         </div>
         <div className='about-section-bottom-column-2'>
           <ul>
-            <option>Javascript</option>
-            <option>Typescript</option>
-            <option>NodeJs</option>
-            <option>Angular</option>
-            <option>React</option>
-            <option>MongoDB</option>
-            <option>MySQL</option>
-            <option>Postman</option>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>NodeJs</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Postman</li>
           </ul>
         </div>
       </div>

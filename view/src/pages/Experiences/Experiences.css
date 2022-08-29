@@ -1,88 +1,103 @@
-.experiences-section{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    justify-items: center;
-}  
-.experiences-container{
-    display: flex;
-    margin-bottom: 2rem;
+.experiences-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
 }
-.experiences-atributtes h2{
-    font-size:30px;
-    margin-bottom: 1rem;
+.experiences-container {
+  display: flex;
+  margin-bottom: 2rem;
+  height: 100%;
+  justify-content: center;
 }
-.experiences-btns{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 1rem;
-}
-.steper-actions{
-    display: flex;
-    justify-content: space-around;
-}
-.card-circle{
-    border-radius: 50%;
-    width: 10px;
-    margin-right: 0.5rem;
-    height: 10px;
-    background-color: #00FFD1;
-}
-.steper-actions button{
-    width:70px;
-    margin-bottom: 0.5rem;
-    height:50px;
-    margin-right: 0.5rem;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.stepper-bar-container {
-    width: 100%;
-    height: 10px;
-    background-color: #f5f5f5;
-    border-radius: 15px;
-}
-.stepper-bar{
-    width: 33.33%;
-    height: 10px;
-    background-color: #6398A6;
-    border-radius: 15px;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-}
-.a-icon{
-    height: 15px;
-    margin-right: 0.6rem;
-    width: 15px;
-    background-image: url('https://marcosmoraga.netlify.app/assets/img/activities-icon.jpeg');
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    opacity:0.65;
+.experiences-atributtes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.experiences-info-container{
-    font-size:0.7rem;
-    display: flex;
-    align-items: flex-end;
+.experiences-atributtes h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
 }
-.experiences-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.experiences-btns {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1rem;
 }
-.card-item{
-    display: flex;
-    margin-bottom:1rem;
-    align-items: center;
+.steper-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-.card-item p{
-    text-justify: justify;
-    text-align: justify;
-    line-height : 25px;
-    width:300px;
+.card-circle {
+  border-radius: 50%;
+  width: 10px;
+  margin-right: 0.5rem;
+  height: 10px;
+  background-color: #00ffd1;
+}
+.steper-actions button {
+  width: 70px;
+  margin-bottom: 0.5rem;
+  height: 50px;
+  margin-right: 0.5rem;
+  background-color: #00ffd1;
+  border-top-right-radius: 15px;
+  color: #cea302;
+  text-shadow: 1px 1px #cea302;
+  border-bottom-right-radius: 15px;
+}
+.stepper-bar-container {
+  height: 10px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  width: 100%;
+}
+.stepper-bar {
+  width: 33.33%;
+  height: 10px;
+  background-color: #6398a6;
+  border-radius: 15px;
+}
+.row {
+  display: flex;
+}
+.a-icon {
+  height: 15px;
+  margin-right: 0.6rem;
+  width: 15px;
+  background-image: url("https://marcosmoraga.netlify.app/assets/img/activities-icon.jpeg");
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.65;
+}
+
+.experiences-info-container {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: flex-end;
+  width: 150px;
+}
+.experiences-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-item {
+  display: flex;
+  align-items: center;
+}
+.card-item p {
+  text-justify: justify;
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 25px;
+  width: 100%;
 }

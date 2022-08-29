@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './Experiences.css'
+import styled, { keyframes } from 'styled-components'
 
 const experiences = [
   {
@@ -34,7 +35,7 @@ const experiences = [
   },
   {
     id: 3,
-    title: 'Desarrollo Sitio web (CMS - Wordpress)',
+    title: 'Desarrollo Sitio web (CMS)',
     activities: [
       'Creación y seguimiento de campaña en Google Ads.',
       'Optimización en tiempos de renderizado.',
@@ -50,11 +51,68 @@ const experiences = [
 ]
 
 
+
 const Experiences = () => {
   const [experience, setExperience] = useState(experiences[0])
+  const [currentMargin, setCurrentMargin] = useState(0)
+  const [previousMargin, setPreviousMargin] = useState([0])
+
+  const heightBar = useRef(null)
+  const heightBarr = useRef(null)
+
+  const movement = keyframes`
+    from {
+    margin-left: ${previousMargin[0]}%;
+    }
+    to {
+    margin-left: ${currentMargin}%;
+    }
+`;
+  const movementMediumSize = keyframes`
+    from {
+      margin-top: ${previousMargin[0]}px;
+    }
+    to {
+      margin-top: ${currentMargin}px;
+    }
+`;
+  const SteperBar = styled.div`
+    width: 33.33%;
+    height: 10px;
+    background-color: #6398A6;
+    border-radius: 15px;
+    animation: ${movement} 1s linear forwards;
+    
+    @media only screen and (min-width: 963px) {
+      height: 33.33%;
+      width:10px;
+      animation: ${movementMediumSize} 1s linear forwards !important;
+
+    }
+    
+    `;
 
   const handleClick = (id) => {
     setExperience(experiences.find(experience => experience.id === id))
+    switch (id) {
+      case 1:
+        setCurrentMargin(0)
+        setPreviousMargin((prev) =>
+          [currentMargin, ...prev])
+        break;
+      case 2:
+        setCurrentMargin(window.screen.availWidth >= 963 ? heightBar.current.offsetHeight / 3 : 33.3333)
+        setPreviousMargin((prev) =>
+          [currentMargin, ...prev])
+        break;
+      case 3:
+        setCurrentMargin(window.screen.availWidth >= 963 ? heightBar.current.offsetHeight - heightBarr.current.offsetHeight : 67)
+        setPreviousMargin((prev) =>
+          [currentMargin, ...prev])
+        break;
+      default:
+        break;
+    }
   }
 
   return (
@@ -88,8 +146,8 @@ const Experiences = () => {
             <button onClick={() => handleClick(2)}>AyT</button>
             <button onClick={() => handleClick(3)}>Materia</button>
           </div>
-          <div className='stepper-bar-container'>
-            <div className='stepper-bar'></div>
+          <div ref={heightBar} className='stepper-bar-container'>
+            <SteperBar ref={heightBarr} />
           </div>
         </aside>
       </div>

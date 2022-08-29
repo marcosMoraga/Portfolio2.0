@@ -43,11 +43,138 @@ body::-webkit-scrollbar {
   background-color: var(--primary-color);
   width: 10px;
 }
-section:not(.contact-section){
-  background-color:transparent;
-  border-radius:20px;
-  color:white;
-  overflow:auto;
+section:not(.contact-section) {
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  color: white;
+  overflow: auto;
+  width: 90%;
+  height: 60%;
+
   margin: 0 20px 0 20px;
+  max-width: 868px;
   box-shadow: 2px 2px 10px 2px black;
+}
+
+@media only screen and (max-height: 782px) {
+  .work-section-column-att p,
+  .work-section-column-att ul {
+    height: auto !important;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .navbar {
+    width: 300px;
+  }
+  .work-section-column-proyects h2 {
+    font-size: 20px;
+  }
+  .card-item p {
+    font-size: 14px;
+  }
+  .experiences-atributtes h2 {
+    font-size: 18px;
+  }
+  .steper-actions button {
+    font-size: 10px;
+    width: 55px;
+    height: 30px;
+  }
+  .start-section-bottom p {
+    font-size: 14px;
+  }
+
+  .start-section-top h1 {
+    font-size: 25px;
+  }
+  .start-section-top h4 {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+  .about-section-bottom-column-2 ul {
+    list-style-type: none;
+    column-count: 2;
+  }
+  .start-section-top {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 963px) {
+  .experiences-section {
+    flex-direction: row;
+  }
+  .experiences-container {
+    margin-bottom: 0 !important;
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .experiences-btns {
+    flex-direction: row;
+    margin-left: 0 !important;
+  }
+  .steper-actions {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .stepper-bar-container {
+    width: 10px;
+    height: 100% !important;
+  }
+
+  .about-section-bottom p {
+    font-size: 22px;
+  }
+  .about-section-bottom ul {
+    font-size: 17px;
+  }
+  .experiences-info-container {
+    justify-content: center;
+    height: 50px;
+  }
+  .steper-actions button {
+    margin-bottom: 0 !important;
+    height: 70px !important;
+    width: 50px !important;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 15px;
+  }
+  section {
+    margin: 0 !important;
+    height: 65% !important;
+  }
+  .card-item p {
+    margin: 0 !important;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .navbar {
+    border-top: none;
+    overflow: none;
+    height: 400px;
+    position: relative;
+    margin-left: 1rem;
+  }
+  .experiences-atributtes {
+    justify-content: space-around;
+  }
+  .work-section-colum-action {
+    flex-grow: 0;
+  }
+  section {
+    height: 75% !important;
+  }
+  .main-column-top {
+    height: 10%;
+  }
+  .navbar-group-items {
+    flex-direction: column;
+  }
+  .main-column {
+    flex-direction: row;
+  }
 }

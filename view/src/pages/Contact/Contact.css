@@ -1,48 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Montserrat:wght@300&display=swap");
 
-.contact-section{
-    color: white;
-    padding: 1rem;
-    height: 60%;
+.contact-section {
+  color: white;
+  padding: 1rem;
+  height: 60%;
+  overflow: auto;
+  display: flex;
+  width: 90%;
+  max-width: 868px;
+  flex-direction: column;
+  justify-content: center;
 }
-.contact-section h2{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom:1rem;
+.contact-section-action a:visited {
+  color: white;
 }
-.contact-section p{
-    font-size: 18px;
-    text-align: center;
-    line-height : 25px;
-    margin-bottom: 2rem;
+.contact-section-action a:link {
+  color: white;
 }
-form textarea,input{
-    resize: none;
-    outline: none;
-    margin-bottom:1rem;
-    font-family: "Catamaran", "Montserrat", sans-serif, Georgia, "Times New Roman";
+.contact-section-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 60px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.contact-icon {
+  margin: 1rem;
 }
-form button{
-    padding:0.5rem;
-    background-color: transparent;
-    color:darkcyan;
-    font-size: 20px;
-    text-transform: uppercase; 
-    letter-spacing: 5px;  
-    border: 1px solid darkcyan;
-    margin-top:1rem;
 
+.contact-section h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
-textarea{
-    height: 100px;
-    width: 300px;
+.contact-section p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 2rem;
 }
-input{
-    padding: 1rem;
+form textarea,
+input {
+  resize: none;
+  outline: none;
+  margin-bottom: 1rem;
+  font-family: "Catamaran", "Montserrat", sans-serif, Georgia, "Times New Roman";
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form button {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: darkcyan;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 1px solid darkcyan;
+  margin-top: 1rem;
+}
+textarea {
+  height: 100px;
+  width: 300px;
+}
+input {
+  padding: 1rem;
 }

@@ -1,35 +1,34 @@
-.main{
-    max-width: 2560px;
-    margin:0 auto;
-    max-height:1250px;
-    background:radial-gradient(#154038,black);
-    height:100vh;
+.main {
+  max-width: 2560px;
+  margin: 0 auto;
+  background: radial-gradient(#154038, black);
+  height: 100vh;
 }
-.main-column{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    height:100%;
-    justify-content:center;
+.main-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
 }
 
-.main-column-top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 15%;
-    width: 100%;
-    position: absolute;
+.main-column-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  position: absolute;
 }
-.main-column-top--logo{
-    background-image:url(https://marcosmoraga.netlify.app/assets/img/logo.png);
-    height:100%;
-    width:150px;
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
+.main-column-top--logo {
+  background-image: url(https://marcosmoraga.netlify.app/assets/img/logo.png);
+  height: 100%;
+  width: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.main-column-top--qualities{
-    color:#00FFD1;
-    font-size:14px;
+.main-column-top--qualities {
+  color: #00ffd1;
+  font-size: 14px;
 }

@@ -1,54 +1,55 @@
-.about-section{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    justify-items: center;
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-items: center;
+  justify-content: space-around;
 }
-.about-section-top h2{
-    font-size:30px;
-    margin-bottom: 1rem;
+.about-section-top h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
 }
 .about-section-middle p {
-    line-height : 25px;
+  line-height: 25px;
 }
-.about-section-middle p span{
-    display:block;
-    margin-bottom:30px;
-    text-align: justify;
-    justify-content:justify;
+.about-section-middle p span {
+  display: block;
+  margin-bottom: 30px;
+  text-align: justify;
+  justify-content: justify;
 }
-.about-section-middle p span a{
-    color:#00FFD1;
+.about-section-middle p span a {
+  color: #00ffd1;
 }
-.about-section-middle p span h1{
-    font-weight:normal;
-    display:inline-block;
-    margin-right:5px;
-    font-size:16px;
+.about-section-middle p span h1 {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 16px;
 }
-.about-section-bottom{
-    background-color:transparent;
-    
+.about-section-bottom {
+  align-self: center;
+  background-color: transparent;
 }
-.about-section-bottom-column-1{
-    text-align:center;
-    margin-bottom: 10px;
-    color:#CEA302;
-    font-size: 18px;
+.about-section-bottom-column-1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #cea302;
+  font-size: 18px;
 }
-.about-section-bottom-column-1 p{
-    font-size:15px;
-    text-align: justify;
-    letter-spacing:1px;
-    margin-bottom: 1.5rem;
+.about-section-bottom-column-1 p {
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
 }
 .about-section-bottom-column-2 ul {
-    display:flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-    justify-content: space-around;
+  font-size: 12px;
+  margin-left: 1rem;
+  column-count: 3;
+  list-style: none;
 }
-.about-section-bottom-column-2 ul option{
-    width:80px;
-    height: 25px;
+.about-section-bottom-column-2 ul option {
+  width: 80px;
+  height: 25px;
 }
