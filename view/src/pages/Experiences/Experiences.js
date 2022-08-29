@@ -13,7 +13,7 @@ const experiences = [
     ],
     period: {
       year: '2021',
-      month: 'Jan - Mar'
+      month: 'Ene - Mar'
     },
     company: 'Femsa'
   },

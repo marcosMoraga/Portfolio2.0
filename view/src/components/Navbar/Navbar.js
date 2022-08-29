@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div ref={navRef} className='navbar-group-items'>
-                <Link id='inicio' onClick={activeBtn} to='/'>Inicio</Link>
+                <Link id='inicio' onClick={activeBtn} to='/'>Intro</Link>
                 <Link id='about' onClick={activeBtn} to='/about'>About</Link>
                 <Link id='experiences' onClick={activeBtn} to='/experiences'>Experience</Link>
                 <Link id='work' onClick={activeBtn} to='/work'>Work</Link>

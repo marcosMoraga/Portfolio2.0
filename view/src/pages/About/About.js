@@ -6,27 +6,26 @@ const About = () => {
   return (
     <section className='about-section'>
       <div className='about-section-top'>
-        <h2>WHO AM I ?</h2>
+        <h2>QUIEN SOY ?</h2>
       </div>
       <div className='about-section-middle'>
         <p>
           <span>
-            My name is Marcos Moraga
-            im developer, passionate about development and innovation, active and motivated by the new challenges he may encounter
-            in the professional field.
+            Mi nombre es marcos moraga.
+            Soy desarrollador, apasionado por el desarrollo y la innovación, activo y motivado por los nuevos desafíos que pueda encontrar
+            en el campo profesional.
           </span>
           <span>
-            I've had the privilege of working at <a href='https://www.femsa.com/es/' target='_blank' rel="noreferrer">Socofar</a>, <a href='https://www.ayt.cl/' target='_blank' rel="noreferrer">AyT</a> and independently.
-            Today i am looking for new challenges that i can colaborate with proactivity, desire to learn, teamwork and much more.
+            He tenido el privilegio de trabajar en <a href='https://www.femsa.com/es/' target='_blank' rel="noreferrer">Socofar</a>, <a href='https://www.ayt.cl/' target='_blank' rel="noreferrer">AyT</a> e independiente.
+            Hoy busco nuevos retos en los que pueda colaborar con creatividad, ganas de aprender, trabajo en equipo y mucho más.
           </span>
         </p>
       </div>
       <div className='about-section-bottom'>
         <div className='about-section-bottom-column-1'>
           <p>
-            Some technologies
-            i was working
-            recently
+            Algunas tecnologías
+            con las que he trabajado recientemente
           </p>
         </div>
         <div className='about-section-bottom-column-2'>

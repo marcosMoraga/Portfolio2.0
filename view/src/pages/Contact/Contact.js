@@ -6,8 +6,8 @@ const Contact = () => {
 
   return (
     <section className='contact-section'>
-      <h2>GET IN TOUCH</h2>
-      <p>If you need more information about my experience or maybe my hobbies, we can coordinate a meeting !</p>
+      <h2>CONTÁCTAME !</h2>
+      <p>Si necesitas más información sobre mi experiencia laboral o quizás mis hobbies, podemos coordinar una reunión!</p>
       <div className='contact-section-action'>
         <a href='https://www.linkedin.com/in/marcos-moraga-hermosilla' target='_blank' rel='noreferrer'><AiFillLinkedin className='contact-icon' /></a>
         <a href="mailto:moraga.dev@gmail.com" target='_blank' rel='noreferrer'><AiOutlineMail className='contact-icon' /></a>
