@@ -16,8 +16,11 @@ const Navbar = () => {
                 return element.id === page
             }
         })
-        current.classList.add('active');
-    }, [navRef])
+        if (current) {
+
+            current.classList.add('active');
+        }
+    }, [])
 
 
     const activeBtn = (event) => {
@@ -31,7 +34,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div ref={navRef} className='navbar-group-items'>
-                <Link id='inicio' onClick={activeBtn} to='/'>Inicio</Link>
+                <Link id='inicio' className='active' onClick={activeBtn} to='/'>Inicio</Link>
                 <Link id='about' onClick={activeBtn} to='/about'>About</Link>
                 <Link id='experiences' onClick={activeBtn} to='/experiences'>Experience</Link>
                 <Link id='work' onClick={activeBtn} to='/work'>Work</Link>
