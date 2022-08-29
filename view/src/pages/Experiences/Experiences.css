@@ -47,10 +47,9 @@
   margin-bottom: 0.5rem;
   height: 50px;
   margin-right: 0.5rem;
-  background-color: #00ffd1;
+  background-color: white;
   border-top-right-radius: 15px;
-  color: #cea302;
-  text-shadow: 1px 1px #cea302;
+  color: black;
   border-bottom-right-radius: 15px;
 }
 .stepper-bar-container {
@@ -85,6 +84,10 @@
   align-items: flex-end;
   width: 150px;
 }
+.experiences-info a {
+  text-decoration: none;
+}
+
 .experiences-info {
   display: flex;
   flex-direction: column;

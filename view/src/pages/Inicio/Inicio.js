@@ -1,5 +1,6 @@
 import React from 'react'
 import './Inicio.css'
+import { Link } from 'react-router-dom'
 const Inicio = () => {
 
   return (
@@ -14,9 +15,9 @@ const Inicio = () => {
           Actualmente estoy en el último año en ingeniería civil en computación e informática,
           mi especialidad es construir y divertirme con el desarrollo web.
         </p>
-        <button className='start-section-action'>See my work!</button>
-        <span>or</span>
-        <a download className='start-section-cv' rel="noreferrer" href="http://192.168.100.3:3000/assets/CV-marcosmoraga.pdf">My CV</a>
+        <Link to='/work' className='start-section-action'>ve mi trabajo!</Link>
+        <span>o</span>
+        <a download className='start-section-cv' rel="noreferrer" href="https://marcosmoraga.netlify.app/assets/CV-marcosmoraga.pdf">Mi CV</a>
       </div>
 
     </section>

@@ -15,7 +15,8 @@ const experiences = [
       year: '2021',
       month: 'Ene - Mar'
     },
-    company: 'Femsa'
+    company: 'Femsa',
+    companyUrl: 'https://www.femsa.com/es/'
   },
   {
     id: 2,
@@ -31,7 +32,8 @@ const experiences = [
       year: '2022',
       month: 'Feb - Jun'
     },
-    company: 'AyT'
+    company: 'AyT',
+    companyUrl: 'https://www.ayt.cl/'
   },
   {
     id: 3,
@@ -46,7 +48,7 @@ const experiences = [
       month: 'Feb - Oct'
     },
     company: 'materia',
-    rrss: 'www.instagram.com/materia.chile/'
+    companyUrl: 'https://www.instagram.com/materia.chile/',
   }
 ]
 
@@ -137,7 +139,7 @@ const Experiences = () => {
           <div className='experiences-info'>
             <h3>{experience.period.year}</h3>
             <h3>{experience.period.month}</h3>
-            <a rel='noreferrer' target='_blank' href={experience.company}>{experience.company}</a>
+            <a rel='noreferrer' target='_blank' href={experience.companyUrl}>{experience.company}</a>
           </div>
         </div>
         <aside className='experiences-btns'>

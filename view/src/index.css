@@ -115,6 +115,18 @@ section:not(.contact-section) {
     flex-direction: row;
     margin-left: 0 !important;
   }
+  .card-item p {
+    font-size: 20px !important;
+  }
+  .experiences-atributtes h2 {
+    font-size: 40px !important;
+  }
+  .about-section-middle p span {
+    margin-bottom: 20px !important;
+  }
+  .about-section-bottom-column-2 ul {
+    font-size: 14px !important;
+  }
   .steper-actions {
     flex-direction: column;
     justify-content: space-around;
@@ -147,8 +159,44 @@ section:not(.contact-section) {
     margin: 0 !important;
     height: 65% !important;
   }
+  .about-section-bottom-column-1 p {
+    font-size: 15px !important;
+  }
+  .about-section-top h2 {
+    font-size: 60px !important;
+  }
+  .about-section-middle p {
+    font-size: 20px !important;
+  }
   .card-item p {
     margin: 0 !important;
+  }
+  .start-section-top h1 {
+    font-size: 60px !important;
+  }
+  .start-section-top h4 {
+    font-size: 20px !important;
+  }
+  .start-section-bottom {
+    height: 40% !important;
+  }
+  .start-section-bottom p {
+    font-size: 20px;
+  }
+  .card.first h2 {
+    font-size: 50px !important;
+  }
+  .work-section-column-att-top h2 {
+    font-size: 30px !important;
+  }
+  .work-section-column-att p {
+    font-size: 18px !important;
+  }
+  .contact-section h2 {
+    font-size: 60px;
+  }
+  .contact-section p {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 1168px) {
@@ -159,6 +207,7 @@ section:not(.contact-section) {
     position: relative;
     margin-left: 1rem;
   }
+
   .experiences-atributtes {
     justify-content: space-around;
   }
@@ -173,6 +222,9 @@ section:not(.contact-section) {
   }
   .navbar-group-items {
     flex-direction: column;
+  }
+  .work-section-column-proyects {
+    height: 228px !important;
   }
   .main-column {
     flex-direction: row;

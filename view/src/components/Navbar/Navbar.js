@@ -33,10 +33,10 @@ const Navbar = () => {
         <nav className="navbar">
             <div ref={navRef} className='navbar-group-items'>
                 <Link id='inicio' onClick={activeBtn} to='/'>Intro</Link>
-                <Link id='about' onClick={activeBtn} to='/about'>About</Link>
-                <Link id='experiences' onClick={activeBtn} to='/experiences'>Experience</Link>
-                <Link id='work' onClick={activeBtn} to='/work'>Work</Link>
-                <Link id='contact' onClick={activeBtn} to='/contact'>Contact</Link>
+                <Link id='about' onClick={activeBtn} to='/about'>Sobre mi</Link>
+                <Link id='experiences' onClick={activeBtn} to='/experiences'>Experencia</Link>
+                <Link id='work' onClick={activeBtn} to='/work'>Trabajo</Link>
+                <Link id='contact' onClick={activeBtn} to='/contact'>Contacto</Link>
             </div>
         </nav>
     )
