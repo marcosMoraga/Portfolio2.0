@@ -2,9 +2,16 @@ import React, { useRef, useEffect } from 'react'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
     const navRef = useRef(null);
-
+    useEffect(() => {
+        const navBtns = navRef.current.children;
+        if (props.flag) {
+            const workComponent = Array.from(navBtns).find(element => element.id === 'work')
+            navBtns[0].classList.remove('active');
+            workComponent.classList.add('active')
+        }
+    }, [props.flag])
     useEffect(() => {
         const navBtns = navRef.current.children;
         const url = window.location.href
@@ -16,8 +23,7 @@ const Navbar = () => {
                 return element.id === page
             }
         })
-        current.classList.add('active');
-
+        current.classList.add('active')
     }, [])
 
 
@@ -26,6 +32,8 @@ const Navbar = () => {
         for (let i = 0; i < navBtns.length; i++) {
             navBtns[i].classList.remove('active');
         }
+
+        props.setFlag(false)
         event.target.classList.add('active');
     }
 

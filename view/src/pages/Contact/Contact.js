@@ -12,12 +12,6 @@ const Contact = () => {
         <a href='https://www.linkedin.com/in/marcos-moraga-hermosilla' target='_blank' rel='noreferrer'><AiFillLinkedin className='contact-icon' /></a>
         <a href="mailto:moraga.dev@gmail.com" target='_blank' rel='noreferrer'><AiOutlineMail className='contact-icon' /></a>
       </div>
-      {/* <form>
-        <input onClick={() => console.log('active')} type='text' name='name' placeholder='Name' />
-        <input type='email' name='email' placeholder='Email' />
-        <textarea name='message' placeholder='Message' />
-        <button onClick={onSubmit} type='submit'>Send</button>
-      </form> */}
     </section>
   )
 }
